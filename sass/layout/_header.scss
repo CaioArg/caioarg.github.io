@@ -1,0 +1,33 @@
+.header {
+    background-color: $color-grey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__content {
+        z-index: 1;
+        text-align: center;
+    }
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        filter: grayscale(1) brightness(.8);
+    }
+
+    &__filter {
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        backdrop-filter: blur(10px);
+    }
+}

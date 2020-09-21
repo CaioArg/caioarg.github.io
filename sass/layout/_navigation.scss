@@ -1,0 +1,43 @@
+.navigation {
+    background-color: $color-grey-dark;
+    box-shadow: 0 0 30px 10px rgba($color: #000000, $alpha: .25);
+    height: 7.2rem;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+
+        .navigation__item--active {
+            background-color: $color-primary;
+            color: $color-grey-dark;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+    }
+
+    &__item {
+        width: 11.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: $color-primary-light;
+        font-weight: 500;
+    }
+}

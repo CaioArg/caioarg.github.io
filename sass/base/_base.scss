@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; //8px
+    }
+
+    @include respond(phone) {
+        font-size: 43.75%; //7px
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
+}
+
+hr {
+    color: #eee;
+    background-color: #eee;
+    border-color: #eee;
+    border-style: solid;
+}
+
+::selection {
+    background-color: $color-primary-dark;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

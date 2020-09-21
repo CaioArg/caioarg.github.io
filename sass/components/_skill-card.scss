@@ -1,0 +1,57 @@
+.skill-card {
+    max-width: 25em;
+    width: 80%;
+    background-color: #fff;
+    min-height: 33rem;
+    color: $text-color;
+    transition: all .4s;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 3px;
+    text-align: center;
+
+    @include respond(phone) {
+        margin: 2rem;
+        max-width: 45rem;
+        min-height: auto;
+        padding: 3rem;
+    }
+
+    &__image-container {
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image {
+        fill: $color-primary-dark;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 2rem;
+    }
+
+    &__item {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.025em;
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

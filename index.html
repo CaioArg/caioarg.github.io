@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+        <link rel="icon" href="img/svg/icon.svg">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Caio Argentino | Desenvolvedor Front End</title>
+    </head>
+
+    <body>
+        <div style="overflow-x: hidden;">
+            <div class="navigation">
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item" data-section="section-about">
+                            Sobre
+                        </li>
+                        <li class="navigation__item" data-section="section-projects">
+                            Projetos
+                        </li>
+                        <li class="navigation__item" data-section="section-contact">
+                            Contato
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <header class="header">
+                <div class="header__content">
+                    <h1 class="heading-primary u-margin-bottom-medium">
+                        <span class="heading-primary--main">Caio Argentino</span>
+                        <span class="heading-primary--secondary">Desenvolvedor Front End</span>
+                    </h1>
+                    <span class="btn-main" data-href="#section-about">SOBRE</span>
+                </div>
+                <video class="header__video" src="img/mp4/background-video.mp4" autoplay muted loop></video>
+                <div class="header__filter"></div>
+            </header>
+            
+            <main class="main">
+                <section class="section-about" id="section-about">
+                    <h2 class="heading-secondary u-margin-bottom-big">Sobre</h2>
+                    <p class="section-about__text u-margin-bottom-big">
+                        Olá, sou Caio Argentino de Oliveira e atualmente curso Bacharelado em Ciência e Tecnologia e Bacharelado Ciência da Computação pela Universidade Federal do ABC (UFABC). Tenho interesse em atuar na área de desenvolvimento web front-end, por gostar de programação e da criação de interfaces de usuário.
+                    </p>
+
+                    <div class="cards-composition">
+                        <div class="skill-cards">
+                            <div class="skill-card">
+                                <div class="skill-card__image-container">
+                                    <svg class="skill-card__image">
+                                        <use href="img/svg/display.svg#display"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-card__title">Front End</h3>
+                                <ul class="skill-card__list">
+                                    <li class="skill-card__item">HTML</li>
+                                    <li class="skill-card__item">CSS</li>
+                                    <li class="skill-card__item">Javascript</li>
+                                    <li class="skill-card__item">JQuery</li>
+                                    <li class="skill-card__item">Bootstrap</li>
+                                    <li class="skill-card__item">SASS</li>
+                                </ul>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card__image-container">
+                                    <svg class="skill-card__image">
+                                        <use href="img/svg/database.svg#database"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-card__title">Back End</h3>
+                                <ul class="skill-card__list">
+                                    <li class="skill-card__item">PHP</li>
+                                    <li class="skill-card__item">MySql</li>
+                                    <li class="skill-card__item">Arquitetura MVC</li>
+                                </ul>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-card__image-container">
+                                    <svg class="skill-card__image">
+                                        <use href="img/svg/tools.svg#tools"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="skill-card__title">Ferramentas</h3>
+                                <ul class="skill-card__list">
+                                    <li class="skill-card__item">GIT</li>
+                                    <li class="skill-card__item">NPM</li>
+                                    <li class="skill-card__item">Figma</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-projects" id="section-projects">
+                    <h2 class="heading-secondary u-margin-bottom-huge">Projetos</h2>
+                    <div class="container">
+                        <div class="project" data-project-id="1">
+                            <video class="project__video hidden-left" src="img/mp4/currency-demo.mp4" autoplay loop muted></video>
+                            <div class="project__info hidden-right">
+                                <h3 class="project__title u-margin-bottom-medium">Conversor De Moedas</h3>
+                                <p class="project__description u-margin-bottom-medium">Aplicativo web para conversão de valores monetários, feito com HTML, CSS, Javascript e utilizando a Exchange rates API</p>
+                                <div class="project__links">
+                                    <a class="btn-project u-margin-right-small" href="https://caioarg.github.io/currency-converter/" target="_blank">Conferir</a>
+                                    <a class="btn-project" href="https://github.com/CaioArg/currency-converter" target="_blank">Source</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="u-margin-top-large u-margin-bottom-large">
+
+                        <div class="project" data-project-id="2">
+                            <video class="project__video project__video--right hidden-right" src="img/mp4/editor-demo.mp4" autoplay loop muted></video>
+                            <div class="project__info hidden-left">
+                                <h3 class="project__title u-margin-bottom-medium">Editor de Imagens</h3>
+                                <p class="project__description u-margin-bottom-medium">Um simples editor de imagens criado com HTML, CSS e Javascript puro</p>
+                                <div class="project__links">
+                                    <a class="btn-project u-margin-right-small" href="https://caioarg.github.io/image-editor/" target="_blank">Conferir</a>
+                                    <a class="btn-project" href="https://github.com/CaioArg/image-editor" target="_blank">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-contact" id="section-contact">
+                    <h2 class="heading-secondary u-margin-bottom-huge">Contato</h2>
+                    <div class="container">
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <a class="contact-card__link" href="https://github.com/CaioArg" target="_blank">
+                                    <div class="contact-card__image-container">
+                                        <svg class="contact-card__image">
+                                            <use href="img/svg/github.svg#github"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="contact-card__text">
+                                        CaioArg
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="contact-card">
+                                <a class="contact-card__link" href="https://br.linkedin.com/in/caio-argentino-de-oliveira-546810191" target="_blank">
+                                    <div class="contact-card__image-container">
+                                        <svg class="contact-card__image">
+                                            <use href="img/svg/linkedin.svg#linkedin"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="contact-card__text">
+                                        Caio Argentino de Oliveira
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="contact-card">
+                                <a class="contact-card__link" href="mailto:caioarg@outlook.com" target="_blank">
+                                    <div class="contact-card__image-container">
+                                        <svg class="contact-card__image">
+                                            <use href="img/svg/mail.svg#mail"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="contact-card__text">
+                                        caioarg@outlook.com
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="contact-card">
+                                <a class="contact-card__link" href="tel:+55-11-96164-0929" target="_blank">
+                                    <div class="contact-card__image-container">
+                                        <svg class="contact-card__image">
+                                            <use href="img/svg/phone.svg#phone"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="contact-card__text">
+                                        (11) 96164-0929
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                Criado por Caio Argentino
+            </footer>
+        </div>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
