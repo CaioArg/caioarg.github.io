@@ -1,13 +1,16 @@
 .btn {
     &-main {
         display: inline-block;
+        background-color: transparent;
         color: $color-primary;
+        outline: none;
         border: .1rem solid $color-primary;
         font-weight: 500;
         font-size: 1.8rem;
         line-height: 2.2rem;
         letter-spacing: 0.05rem;
         padding: 1.8rem 6rem;
+        border-radius: 3px;
         cursor: pointer;
         transition: all .3s;
 
@@ -28,6 +31,7 @@
         letter-spacing: 0.05rem;
         padding: 1.25rem 3.75rem;
         transition: all .3s;
+        border-radius: 3px;
 
         &:hover {
             color: #fff;
