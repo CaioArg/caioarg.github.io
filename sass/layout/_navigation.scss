@@ -1,5 +1,6 @@
 .navigation {
-    background-color: $color-grey-dark;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: saturate(360%) blur(20px);
     box-shadow: 0 0 30px 10px rgba($color: #000000, $alpha: .25);
     height: 7.2rem;
     display: flex;
